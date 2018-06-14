@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /*scroll-behavior: smooth;*/
+    scroll-behavior: smooth;
 }
 
 body {
@@ -30,7 +30,7 @@ h3, p {
     display: inline-block;
     font-size: 20px;
     z-index: 999;
-    background: #252a3475
+    background-color: #252a3475
 }
 
 @media only screen and (max-width: 1000px) {
@@ -90,7 +90,7 @@ h3, p {
     color: #eaeaea
 }
 
-.overlay-nav{
+.overlay-nav {
     display: none;
     height: 100%;
     width: 0;
@@ -98,14 +98,28 @@ h3, p {
     z-index: 999999;
     top: 0;
     left: 0;
-    background-color: rgba(205,205,205, 0.7);
+    background-color: rgba(25,25,25, 0.8);
     overflow-x: hidden;
     transition: 0.5s;
 }
 
+.overlay-nav a {
+  display: block;
+  padding: 20px 30px;
+  color: #eaeaea;
+  transition: .5s ease;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 5vh;
+}
+
+.overlay-nav a:hover {
+  color: #ff2e62;
+  transition: .5s ease;
+}
+
 /* Header */
 .header {
-    /*background-image: url("../images/landing page/sister.png");*/
     z-index: 1;
     height: 100vh;
     background-size: cover;
@@ -115,7 +129,7 @@ h3, p {
 .nav-item a:hover {
     color: rgb(25,25,25);
     background: #ff2e62;
-    font-weight: bold;
+    /*font-weight: bold;*/
     transition: .5s ease;
 }
 
@@ -230,4 +244,8 @@ h3, p {
     transform: scale(1.05);
     filter: blur(5px) brightness(80%);
 
+}
+
+#anchor {
+    overflow: visible;
 }
