@@ -1,0 +1,162 @@
+<!doctype HTML>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+    <!-- Header -->
+    <head>
+        <!-- Regular metadata -->
+        <meta charset="utf-8">
+        <title>Home - RNZO Designs: Digital Artist Based In Amsterdam</title>
+        <meta name="description" content="I am RNZO, a freelance digital artist and designer based in Amsterdam">
+        <meta name="author" content="Renzo Schindeler">
+        <meta name="keywords" content="designer, graphic designer, art, artworks, 3D modeling, digital artist, artist, amsterdam">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Social Graph Tags
+        <meta property="og:title" content="Home - RNZO Designs"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://www.rnzodesigns.com/"/>
+        <meta property="og:image" content="./images/logos/RNZO_site_image.jpg" />
+        <meta property="og:site_name" content="RNZO Designs">
+        -->
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="../images/favicons/faviconMint16x16.ico"/>
+
+        <!-- Styles And Fonts -->
+        <link rel="stylesheet" href="../stylesheets/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    </head>
+
+    <!-- Body -->
+    <body>
+        <!-- Top Nav Menu Bar (Desktop) -->
+        <nav class="nav nav-desktop">
+            <div class="nav-wrapper">
+                <a href="index.html"><img src="../images/logos/RNZO_200x200_white.png" alt="RNZO Logo" class="nav-logo"/></a>
+                <ul class="nav-list">
+                    <li class="nav-item nav-active"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Top Nav Menu Bar (Mobile) -->
+        <nav class="nav nav-mobile">
+            <div class="nav-wrapper-mobile">
+                <a href="index.html"><img src="../images/logos/RNZO_200x200_white.png" alt="RNZO Logo" class="nav-logo mobile-logo"/></a>
+                <span class="nav-hamburger" style="cursor:pointer">&#9776;</span>
+            </div>
+        </nav>
+
+        <!-- Overlay Menu (Mobile) -->
+        <div class="overlay-nav">
+                <a href="javascript:void(0)" class="close-button">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Header -->
+        <header class="header">
+            <video class="header-video" autoplay loop muted src="../images/index/loop.mp4"></video>
+            <a href="#anchor"><img src="../images/icons/arrow3.png" alt="Scroll Arrow" class="header-arrow"/></a>
+        </header>
+
+        <!-- Main -->
+        <main id="anchor">
+
+            <!-- Main Panels -->
+            <section class="grid-container">
+                <div class="grid-item client-work-panel">
+                    <img class="client-work-image grid-image" src="../images/index/client-work-panel.jpg" alt="Client Work Panel"/>
+                    <h1>Client Work</h1>
+                </div>
+
+                <div class="grid-item personal-work-panel">
+                    <img class="personal-work-image grid-image" src="../images/index/personal-work-panel.jpg" alt="Personal Work Panel"/>
+                    <h1>Personal Work</h1>
+                </div>
+
+                <div class="grid-item about-panel">
+                    <img class="about-image grid-image" src="../images/index/about-panel.jpg" alt="About Panel"/>
+                    <h1>About</h1>
+                </div>
+
+                <div class="grid-item contact-panel">
+                    <img class="contact-image grid-image" src="../images/index/contact-panel.jpg" alt="Contact Panel"/>
+                    <h1>Contact</h1>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-wrapper">
+                <p>© RNZO 2018 || All Rights Reserved.</p>
+                <div class="socials-footer-wrapper">
+                    <a href="https://www.facebook.com/rnzodesigns/" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-behance"></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JS Scripts -->
+
+        <script>
+            $(".header-arrow").first().click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#anchor").offset().top
+                    }, 'slow');
+            });
+
+        </script>
+
+        <script>
+            /* Script for changing the color of the nav menu logo when hovering over it */
+            $(".nav-logo").hover(
+                function() {
+
+                    $(this).attr("src", "../images/logos/RNZO_200x200_mint.png");
+                }, function() {
+                    $(this).attr("src", "../images/logos/RNZO_200x200_white.png");
+                }
+            );
+        </script>
+
+        <script>
+          $(".nav-hamburger").first().click(function() { $(".overlay-nav").first().show().width("100%"); })
+          $(".close-button").first().click(function() { $(".overlay-nav").first().hide().width("0"); })
+          $( window ).resize(function() {
+              if (screen.width > 1000) {
+                  $(".overlay-nav").first().hide().width("0");
+              }
+          });
+
+            /*
+            function openNav() {
+                /*document.getElementsByClassName(".side-nav")[0].style.width = "250px";
+                $(".overlay-nav").first().show();
+                console.log("Show overlay menu");
+            }
+
+            function closeNav() {
+                $(".overlay-nav").first().hide();
+                console.log("Hiding overlay menu");
+            }
+            */
+        </script>
+
+
+    </body>
+</html>
