@@ -21,6 +21,10 @@ h3, p {
     color: #eaeaea
 }
 
+main {
+  background-color: rgb(20,20,20);
+}
+
 /* Top nav menu */
 
 .nav {
@@ -168,6 +172,12 @@ h3, p {
     transition: .5s ease;
 }
 
+.header-banner {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+}
+
 /* Footer */
 
 .footer-wrapper {
@@ -230,6 +240,8 @@ h3, p {
     /*border: solid #ff2e62 10px;*/
     color: #00ffaa;
     text-shadow: 3px 3px #252a34bb;
+    font-weight: bold;
+    text-decoration: none;
     /*box-shadow: 3px 3px #252a34bb;*/
 }
 

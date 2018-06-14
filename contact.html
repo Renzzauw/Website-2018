@@ -39,10 +39,10 @@
             <div class="nav-wrapper">
                 <a href="index.html"><img src="./images/logos/RNZO_200x200_white.png" alt="RNZO Logo" class="nav-logo"/></a>
                 <ul class="nav-list">
-                    <li class="nav-item nav-active"><a href="index.html">Home</a></li>
+                    <li class="nav-item "><a href="index.html">Home</a></li>
                     <li class="nav-item"><a href="projects.html">Projects</a></li>
                     <li class="nav-item"><a href="about.html">About</a></li>
-                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    <li class="nav-item nav-active"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -65,31 +65,26 @@
         </div>
 
         <!-- Header -->
-        <header class="header">
-            <video class="header-video" autoplay loop muted src="./images/index/loop.mp4"></video>
-            <a href="#anchor"><img src="./images/icons/arrow3.png" alt="Scroll Arrow" class="header-arrow"/></a>
+        <header>
+            <img src="./images/banners/banner2.jpg" class="header-banner"></img>
         </header>
 
         <!-- Main -->
-        <main id="anchor">
-            <!-- Main Panels -->
-            <section class="grid-container">
-                <!-- Client Work -->
-                <div class="grid-item client-work-panel">
-                    <a href="./projects/client.html"><img class="client-work-image grid-image" src="./images/index/client-work-panel.jpg" alt="Client Work Panel"><h1>Client Work</h1></img></a>
-                </div>
-                <!-- Personal Work -->
-                <div class="grid-item personal-work-panel">
-                    <a href="./projects/personal.html"><img class="personal-work-image grid-image" src="./images/index/personal-work-panel.jpg" alt="Personal Work Panel"><h1>Personal Work</h1></img></a>
-                </div>
-                <!-- About -->
-                <div class="grid-item about-panel">
-                    <a href="about.html"><img class="about-image grid-image" src="./images/index/about-panel.jpg" alt="About Panel"><h1>About</h1></img></a>
-                </div>
-                <!-- Contact -->
-                <div class="grid-item contact-panel">
-                    <a href="contact.html"><img class="contact-image grid-image" src="./images/index/contact-panel.jpg" alt="Contact Panel"><h1>Contact</h1></img></a>
-                </div>
+        <main>
+            <!-- Breadcrumbs -->
+            <div><a href="index.html">Home</a> // <b>Contact<b></div>
+            <!-- Page Content -->
+            <section>
+                <h1>Contact</h1>
+                <section>
+                    <h2>Contact Me</h2>
+                    <a href="mailto:contact@rnzoart.com">&#128231; contact@rnzoart.com</a>
+                    <a href="https://www.rnzoart.com">&#127760; https://www.rnzoart.com</a>
+                    <a href="https://www.facebook.com/rnzodesigns/" ></a>
+                    <a href="https://www.instagram.com/rnzodesigns/"></a>
+                    <a href="https://twitter.com/RNZODESIGNS" ></a>
+                    <a href="https://www.behance.net/rnzodesigns" ></a>
+                </section>
             </section>
         </main>
 
@@ -107,15 +102,7 @@
         </footer>
 
         <!-- JS Scripts -->
-        <script>
-            /* Script for smooth scrolling */
-            $(".header-arrow").first().click(function() {
-                $('html,body').animate({
-                    scrollTop: $("#anchor").offset().top
-                    }, 'slow');
-            });
 
-        </script>
         <script src="./scripts/navMenu.js"></script>
 
     </body>
