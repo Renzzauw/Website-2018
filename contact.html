@@ -3,66 +3,24 @@
 
     <!-- Header -->
     <head>
-        <!-- Regular metadata -->
-        <meta charset="utf-8">
-        <title>Home - RNZO Designs: Digital Artist Based In Amsterdam</title>
-        <meta name="description" content="I am RNZO, a freelance digital artist and designer based in Amsterdam">
-        <meta name="author" content="Renzo Schindeler">
-        <meta name="keywords" content="designer, graphic designer, art, artworks, 3D modeling, digital artist, artist, amsterdam">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Social Graph Tags -->
-        <meta property="og:title" content="Home - RNZO Designs"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="http://www.rnzodesigns.com/"/>
-        <meta property="og:image" content="./images/logos/RNZO_site_image.jpg" />
-        <meta property="og:site_name" content="RNZO Designs">
-
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="./images/favicons/faviconMint16x16.ico"/>
 
         <!-- Styles And Fonts -->
         <link rel="stylesheet" href="./stylesheets/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- JS Library Imports -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+        <!-- Google Recaptcha Import -->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
     </head>
 
     <!-- Body -->
     <body>
-        <!-- Top Nav Menu Bar (Desktop) -->
-        <nav class="nav nav-desktop">
-            <div class="nav-wrapper">
-                <a href="index.html"><img src="./images/logos/RNZO_200x200_white.png" alt="RNZO Logo" class="nav-logo"/></a>
-                <ul class="nav-list">
-                    <li class="nav-item "><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a href="about.html">About</a></li>
-                    <li class="nav-item nav-active"><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- Top Nav Menu Bar (Mobile) -->
-        <nav class="nav nav-mobile">
-            <div class="nav-wrapper-mobile">
-                <a href="index.html"><img src="./images/logos/RNZO_200x200_white.png" alt="RNZO Logo" class="nav-logo mobile-logo"/></a>
-                <span class="nav-hamburger" style="cursor:pointer">&#9776;</span>
-            </div>
-        </nav>
-
-        <!-- Overlay Menu (Mobile) -->
-        <div class="overlay-nav">
-                <a href="javascript:void(0)" class="close-button">&times;</a>
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-        </div>
 
         <!-- Header -->
         <header>
@@ -70,21 +28,47 @@
         </header>
 
         <!-- Main -->
-        <main>
+        <main class="main">
             <!-- Breadcrumbs -->
-            <div><a href="index.html">Home</a> // <b>Contact<b></div>
-            <!-- Page Content -->
-            <section>
-                <h1>Contact</h1>
-                <section>
-                    <h2>Contact Me</h2>
-                    <a href="mailto:contact@rnzoart.com">&#128231; contact@rnzoart.com</a>
-                    <a href="https://www.rnzoart.com">&#127760; https://www.rnzoart.com</a>
-                    <a href="https://www.facebook.com/rnzodesigns/" ></a>
-                    <a href="https://www.instagram.com/rnzodesigns/"></a>
-                    <a href="https://twitter.com/RNZODESIGNS" ></a>
-                    <a href="https://www.behance.net/rnzodesigns" ></a>
-                </section>
+            <h4 class="breadcrumbs">
+                <a href="index.html">Home</a>
+                 //
+                <a href="contact.html">Contact</a>
+            </h4>
+
+            <!-- Page Title -->
+            <h1 class="page-title">Contact</h1>
+
+            <!-- Contact Details -->
+            <section class="contact-section page-section">
+                <h2>Get In Touch</h2>
+                <p><div class="fa fa-envelope"/><a href="mailto:contact@rnzoart.com"> contact@rnzoart.com</a></p>
+    	        <p><div class="fa fa-commenting"/><a href="http://m.me/rnzoart"> m.me/rnzoart</a></p>
+            </section>
+            <!-- Contact Form -->
+            <section class="form-section page-section">
+                <h2>Contact Form</h2>
+                <form action="https://formspree.io/contact@rnzoart.com" method="POST">
+                    <h4>Your name</h4>
+                    <input class="input-field" type="text" name="name" placeholder="Your name" required>
+                    <h4>Your email</h4>
+                    <input class="input-field" type="email" name="_replyto" placeholder="Your email" required>
+                    <h4>Your message</h4>
+                    <textarea class="text-field" name="message" placeholder="Your message" required></textarea>
+                    <h4>Show your box clicking skills</h4>
+                    <div class="g-recaptcha" data-sitekey="6LeNTF8UAAAAADQrbeTNsZAWJvr9r1cwsxl2TKMc"></div>
+                    <input class="input-button" type="submit" value="Send">
+                </form>
+            </section>
+            <!-- Social Media -->
+            <section class="socials-section page-section">
+                <h2>Follow Me</h2>
+                <p><div class="fa fa-mouse-pointer"/><a href="https://www.rnzoart.com" target="_blank">RNZOART.COM</a></p>
+                <p><div class="fa fa-facebook"/><a href="https://www.facebook.com/rnzoart/" target="_blank">@RNZOART</a></p>
+                <p><div class="fa fa-instagram"/><a href="https://www.instagram.com/rnzoart/"target="_blank">@RNZOART</a></p>
+                <p><div class="fa fa-twitter"/><a href="https://twitter.com/rnzoart" target="_blank">@RNZOART</a></p>
+                <p><div class="fa fa-behance"/><a href="https://www.behance.net/rnzodesigns" target="_blank">RNZOART</a></p>
+                <p><div class="fa fa-youtube-play"/><a href="https://www.youtube.com/channel/UCXkKiGy_cyTx--CYE0ovryw" target="_blank">RNZO</a></p>
             </section>
         </main>
 
@@ -93,10 +77,10 @@
             <div class="footer-wrapper">
                 <p>© RNZO 2018 || All Rights Reserved.</p>
                 <div class="socials-footer-wrapper">
-                    <a href="https://www.facebook.com/rnzodesigns/" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/rnzodesigns/" class="fa fa-instagram"></a>
-                    <a href="https://twitter.com/RNZODESIGNS" class="fa fa-twitter"></a>
-                    <a href="https://www.behance.net/rnzodesigns" class="fa fa-behance"></a>
+                    <a href="https://www.facebook.com/rnzoart/" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com/rnzoart/" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://twitter.com/rnzoart" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.behance.net/rnzoart" class="fa fa-behance" target="_blank"></a>
                 </div>
             </div>
         </footer>

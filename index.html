@@ -1,22 +1,36 @@
 <!doctype HTML>
-<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 
     <!-- Header -->
     <head>
         <!-- Regular metadata -->
         <meta charset="utf-8">
-        <title>Home - RNZO Designs: Digital Artist Based In Amsterdam</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home - RNZO Art: Digital Artist Based In Amsterdam</title>
         <meta name="description" content="I am RNZO, a freelance digital artist and designer based in Amsterdam">
         <meta name="author" content="Renzo Schindeler">
         <meta name="keywords" content="designer, graphic designer, art, artworks, 3D modeling, digital artist, artist, amsterdam">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Social Graph Tags -->
-        <meta property="og:title" content="Home - RNZO Designs"/>
+        <!-- Schema.org markup for Google+ -->
+        <meta itemprop="name" content="Home - RNZO Art">
+        <meta itemprop="description" content="I am RNZO, a freelance digital artist and designer based in Amsterdam">
+        <meta itemprop="image" content="./images/logos/thumbnail.jpg">
+
+        <!-- Open Graph Protocol -->
+        <meta property="og:title" content="Home - RNZO Art"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="http://www.rnzodesigns.com/"/>
-        <meta property="og:image" content="./images/logos/RNZO_site_image.jpg" />
-        <meta property="og:site_name" content="RNZO Designs">
+        <meta property="og:description" content="I am RNZO, a freelance digital artist and designer based in Amsterdam">
+        <meta property="og:url" content="http://www.rnzoart.com/"/>
+        <meta property="og:image" content="./images/logos/thumbnail.jpg" />
+        <meta property="og:site_name" content="RNZO Art">
+
+        <!-- Twitter -->
+        <meta name="twitter:title" content="Home - RNZO Art"/>
+        <meta name="twitter:type" content="website"/>
+        <meta name="twitter:url" content="http://www.rnzoart.com/"/>
+        <meta name="twitter:image" content="./images/logos/thumbnail.jpg" />
+        <meta name="twitter:site_name" content="RNZO Art">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="./images/favicons/faviconMint16x16.ico"/>
@@ -25,9 +39,10 @@
         <link rel="stylesheet" href="./stylesheets/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- JS Library Imports -->
+        <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     </head>
@@ -67,28 +82,48 @@
         <!-- Header -->
         <header class="header">
             <video class="header-video" autoplay loop muted src="./images/index/loop.mp4"></video>
-            <a href="#anchor"><img src="./images/icons/arrow3.png" alt="Scroll Arrow" class="header-arrow"/></a>
+            <img src="./images/icons/arrow3.png" alt="Scroll Arrow" class="header-arrow"/>
         </header>
 
         <!-- Main -->
-        <main id="anchor">
+        <main>
             <!-- Main Panels -->
             <section class="grid-container">
                 <!-- Client Work -->
                 <div class="grid-item client-work-panel">
-                    <a href="./projects/client.html"><img class="client-work-image grid-image" src="./images/index/client-work-panel.jpg" alt="Client Work Panel"><h1>Client Work</h1></img></a>
+                    <a href="./projects/client.html">
+                        <img class="client-work-image grid-image" src="./images/index/client-work-panel-small.jpg" alt="Client Work Panel">
+                            <h1>Client Work</h1>
+                            <h3>A showcase of client work.</h3>
+                        </img>
+                    </a>
                 </div>
                 <!-- Personal Work -->
                 <div class="grid-item personal-work-panel">
-                    <a href="./projects/personal.html"><img class="personal-work-image grid-image" src="./images/index/personal-work-panel.jpg" alt="Personal Work Panel"><h1>Personal Work</h1></img></a>
+                    <a href="./projects/personal.html">
+                        <img class="personal-work-image grid-image" src="./images/index/personal-work-panel-small.jpg" alt="Personal Work Panel">
+                            <h1>Personal Work</h1>
+                            <h3>A showcase of my personal work.</h3>
+                        </img>
+                  	</a>
                 </div>
                 <!-- About -->
                 <div class="grid-item about-panel">
-                    <a href="about.html"><img class="about-image grid-image" src="./images/index/about-panel.jpg" alt="About Panel"><h1>About</h1></img></a>
+                    <a href="about.html">
+                        <img class="about-image grid-image" src="./images/index/about-panel-small.jpg" alt="About Panel">
+                            <h1>About</h1>
+                            <h3>Find out who RNZO is.</h3>
+                        </img>
+                    </a>
                 </div>
                 <!-- Contact -->
                 <div class="grid-item contact-panel">
-                    <a href="contact.html"><img class="contact-image grid-image" src="./images/index/contact-panel.jpg" alt="Contact Panel"><h1>Contact</h1></img></a>
+                    <a href="contact.html">
+                        <img class="contact-image grid-image" src="./images/index/contact-panel-small.jpg" alt="Contact Panel">
+                            <h1>Contact</h1>
+                            <h3>Get in touch with me.</h3>
+                        </img>
+                    </a>
                 </div>
             </section>
         </main>
@@ -98,25 +133,17 @@
             <div class="footer-wrapper">
                 <p>© RNZO 2018 || All Rights Reserved.</p>
                 <div class="socials-footer-wrapper">
-                    <a href="https://www.facebook.com/rnzodesigns/" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/rnzodesigns/" class="fa fa-instagram"></a>
-                    <a href="https://twitter.com/RNZODESIGNS" class="fa fa-twitter"></a>
-                    <a href="https://www.behance.net/rnzodesigns" class="fa fa-behance"></a>
+                    <a href="https://www.facebook.com/rnzoart/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/rnzoart/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/rnzoart" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.behance.net/rnzoart" target="_blank" class="fa fa-behance"></a>
                 </div>
             </div>
         </footer>
 
         <!-- JS Scripts -->
-        <script>
-            /* Script for smooth scrolling */
-            $(".header-arrow").first().click(function() {
-                $('html,body').animate({
-                    scrollTop: $("#anchor").offset().top
-                    }, 'slow');
-            });
-
-        </script>
         <script src="./scripts/navMenu.js"></script>
+        <script src="./scripts/homeGrid.js"></script>
 
     </body>
 </html>
